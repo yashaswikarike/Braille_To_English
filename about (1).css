@@ -1,0 +1,182 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #0b0f16, #11202c);
+    color: #cfd8dc;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: transparent;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00bcd4;
+    margin: 0;
+    text-transform:none;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.15rem;
+    letter-spacing: 0.7px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 0;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00bcd4;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+.btn-signing {
+    padding: 10px 24px;
+    background-color: #00bcd4;
+    color: #0b0f16;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.2);
+}
+
+.btn-signing:hover {
+    background-color: #00bcd4;
+    transform: translateY(-2px);
+}
+
+/* Wrapper for main content */
+.main-wrapper {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Main Content */
+main {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+    min-height: 460px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Spline as background inside main */
+.spline-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.4;
+    filter: blur(1px);
+}
+
+/* Text on top of spline */
+main section {
+    position: relative;
+    z-index: 1;
+}
+
+main section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-bottom: 2px solid #03a9f4;
+    padding-bottom: 10px;
+}
+
+main section h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    color: #03a9f4;
+}
+
+main section p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #cfd8dc;
+    line-height: 1.8;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .btn-signing {
+        align-self: flex-start;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+}

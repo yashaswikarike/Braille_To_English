@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DotTalk</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="logo" data-aos="fade-down" data-aos-duration="1500">DotTalk</h1>
+      <nav>
+        <a href="index.html" data-aos="fade-down" data-aos-duration="2000">Home</a>
+        <a href="Translator.html" data-aos="fade-down" data-aos-duration="2000">DotTalk</a>
+        <a href="about.html" data-aos="fade-down" data-aos-duration="2000">About</a>
+      </nav>
+      <a href="ContactUs.html">
+        <button class="btn-signing" data-aos="fade-down" data-aos-duration="1500">CONTACT US</button>
+      </a>
+    </header>
+
+    <main>
+      <div class="content">
+        <div class="tag-box" data-aos="fade-zoom-in" data-aos-delay="300" data-aos-duration="1500">
+          <div class="tag">HELLO ☺</div>
+        </div>
+
+        <h1 data-aos="fade-zoom-in" data-aos-delay="300" data-aos-duration="2000">
+          Braille dots being translated into text
+        </h1>
+
+        <p class="description" data-aos="fade-zoom-in" data-aos-delay="300" data-aos-duration="2500">
+            Easily convert Braille patterns into readable English using our intelligent translation tool. Designed for accessibility and learning
+        </p>
+
+        <div class="buttons" data-aos="fade-zoom-in" data-aos-delay="300" data-aos-duration="3000">
+          <a href="about.html" class="btn-get-started">Documentation &gt;</a>
+          <a href="Translator.html"  class="btn-signing main">GET STARTED</a>
+        </div>
+      </div>
+
+      <h1 class="how-it-works-title" data-aos="fade-down" data-aos-delay="150" data-aos-duration="3500">
+        How It Works
+      </h1>
+
+      <div class="steps-container">
+        <div class="step-card">
+          <div class="circle">1</div>
+          <h3>Image Capturing</h3>
+          <p>Insert your Braille Image or Document to convert it into English .</p>
+        </div>
+        <div class="step-card">
+          <div class="circle">2</div>
+          <h3>Get Classification</h3>
+          <p>The system uses machine learning to examine the Braille pattern and classify it into the correct English equivalent.</p>
+        </div>
+        <div class="step-card">
+          <div class="circle">3</div>
+          <h3>Converts to English </h3>
+          <p>The system captures Braille input, processes it, and accurately converts it into readable English text.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 DotTalk | All Rights Reserved</p>
+    </footer>
+  </div>
+  
+  <spline-viewer 
+    data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="0"
+    data-aos-duration="3000"
+    class="robot-3d"
+    url="https://prod.spline.design/TLKg7ksvDS1Ds2Xo/scene.splinecode">
+  </spline-viewer>
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.87/build/spline-viewer.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>

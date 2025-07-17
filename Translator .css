@@ -1,0 +1,199 @@
+/* ========== Base Styles ========== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #f0f0f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========== Header ========== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    margin-top: -20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 10%;
+    padding: 10px 0;
+    color: #ffffff;
+    border-bottom: 1px solid #040315;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: -5%;
+    padding: 10px 0;
+    border-bottom: 1px solid #040315;
+}
+
+nav a {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #4da8da;
+}
+
+/* ========== Translator Layout ========== */
+.translator-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 5%;
+    gap: 40px;
+}
+
+.container {
+    max-width: 530px;
+    margin: 5.5px auto;
+    padding: 30px;
+    background: #1e2a38;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin-left: 10%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #f0f0f0;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* ========== Form Elements ========== */
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #9ac0d4;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+input[type="file"] {
+    margin: 10px 0 20px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+button,
+.btn-signing {
+    padding: 12px 28px;
+    background-color: #4da8da;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+.btn-signing:hover {
+    background-color: #1b4f72;
+}
+
+/* ========== Output Section ========== */
+#outputText {
+    margin-top: 1em;
+    background-color: rgba(77, 168, 218, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(77, 168, 218, 0.2);
+}
+
+/* ========== Spline Container ========== */
+.spline-container {
+    width: 90%;
+    max-width: 500px;
+    height: 550px;
+    flex-shrink: 0;
+    background-color: transparent;
+}
+
+.spline-container spline-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+/* ========== Footer ========== */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    color: #f0f0f0;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 1300px) {
+    header {
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .translator-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .btn-signing {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .spline-container {
+        height: 300px;
+    }
+}

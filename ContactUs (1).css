@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #0b0f16, #11202c);
+    color: #cfd8dc;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: transparent;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #8e44ad; /* Purple color */
+    margin: 0;
+    text-transform:none;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.15rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8e44ad;
+}
+
+/* Flex container for contact + spline */
+.contact-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Email contact section */
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Spline viewer styles */
+.spline-wrapper {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    margin-top: -20px;
+}
+
+.robot-3d {
+    width: 80%;
+    height: 290px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Style for the email links */
+.email-link {
+    text-decoration: none; /* Remove underline */
+    color: #8e44ad; /* Set the desired color */
+    font-weight: 600; /* Optionally make the text bold */
+    transition: color 0.3s ease; /* Smooth transition when hovered */
+}
+
+.email-link:hover {
+    color: #8e44ad; /* Change the color on hover */
+}
+
+/* Contact Heading Styles */
+.contact-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-bottom: 2px solid #8e44ad; /* Purple line, same as logo */
+    padding-bottom: 10px;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #1a242f;
+    color: #cfd8dc;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 12px 24px;
+    background-color: #8e44ad;
+    color: #0b0f16;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #8e44ad;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    color: #f0f0f0;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+    margin-top: -5px;
+}

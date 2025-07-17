@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | DotTalk</title>
+    <link rel="stylesheet" href="contactUs.css">
+</head>
+
+<body>
+    <header>
+        <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">DotTalk</h1>
+        <nav>
+            <a data-aos="fade-down" data-aos-duration="2000" href="index.html">Home</a>
+            <a data-aos="fade-down" data-aos-duration="2000" href="Translator.html">Translate</a>
+            <a data-aos="fade-down" data-aos-duration="2000" href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="contact-heading">Contact Us</h2>
+            <p>If you have any questions or feedback regarding our Braille to English translator, please feel free to reach out to us!</p>
+            <div class="contact-flex-container">
+                <!-- Contact Details Section -->
+                <div class="contact-info">
+                    <p>For inquiries, please contact us at:</p>
+                    <ul>
+                        <strong>EMAILS:</strong>
+                        <li><a href="mailto:jsatvi06@gmail.com" class="email-link">jsatvi06@gmail.com</a></li>
+                        <li><a href="mailto:nikithaelpula@gmail.com" class="email-link">nikithaelpula@gmail.com</a></li>
+                        <li><a href="mailto:yashaswikarike17@gmail.com" class="email-link">yashaswikarike17@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="spline-wrapper">
+                    <spline-viewer class="robot-3d" url="https://prod.spline.design/TrEKDrTWhbcUZKSA/scene.splinecode"></spline-viewer>
+                </div>
+            </div>
+
+            <!-- Contact Form Section -->
+            <form action="submit_contact.php" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
+    <footer>
+        <p>&copy; 2025 DotTalk | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

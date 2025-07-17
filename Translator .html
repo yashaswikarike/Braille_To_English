@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Braille to English Translator</title>
+    <link rel="stylesheet" href="Translator.css" />
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">DotTalk</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Translator.html">DotTalk</a>
+            <a href="about.html">About</a>
+        </nav>
+        <a href="ContactUs.html">
+            <button class="btn-signing">CONTACT US</button>
+        </a>
+    </header>
+
+    <div class="translator-wrapper">
+        <div class="container">
+            <h1>Braille dots being translated into text</h1>
+            <p>Upload a Braille image to get it translated into English. Make the world more accessible with our easy-to-use Braille-to-English translator.</p>
+            <br>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="brailleImage">Upload a Braille Image File</label>
+                <input type="file" id="brailleImage" name="brailleImage" accept="image/*" required />
+                <button type="submit">Translate</button>
+            </form>
+            <div id="outputText">
+                <h2>Translated Text:</h2>
+                <p>Your translated Braille text will appear here...</p>
+            </div>
+        </div>
+
+        <div class="spline-container">
+            <spline-viewer url="https://prod.spline.design/BCNNIgHfFHTKIveK/scene.splinecode"></spline-viewer>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DotTalk | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
